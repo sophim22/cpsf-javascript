@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Monitor nav -->
+  <div id="main-nav" class="lg:block hidden">
+    <nav class="flex px-4 items-center fixed z-30 w-full mx-auto bg-green-900 shadow-lg">
+      <div class="text-lg font-bold md:py-0 py-4">
+        Logo
+      </div>
+      <ul class="md:px-2 ml-auto md:flex md:space-x-2 text-white absolute md:relative top-full left-0 right-0"
+        id="main-nav">
+        <li>
+          <a href="#" class="flex md:inline-flex p-4 items-center hover:text-orange-400">
+            <span>Business Directory</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex md:inline-flex p-4 items-center hover:text-orange-400">
+            <span>eMarketplace</span>
+          </a>
+        </li>
+        <li class="relative parent">
+          <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:text-orange-400 space-x-2">
+            <span>About CPSF</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+            </svg>
+          </a>
+          <ul
+            class="child transition duration-300 md:absolute text-black top-full right-0 md:w-48 bg-gray-50 shadow-lg divide-y divide-slate-200 md:rounded-b">
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                Profile
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                Team Managements
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                History
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                Strategic
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                Our Donors Partners
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                Message
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                Privacy and Policy
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative parent">
+          <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:text-orange-400 space-x-2">
+            <span>Resources</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+            </svg>
+          </a>
+          <ul
+            class="child transition duration-300 md:absolute text-black top-full right-0 md:w-48 bg-gray-50 devide-y devide-slate-300 shadow-lg divide-y divide-slate-200 md:rounded-b ">
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                Data Collection 2022
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                Daily Price Update
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                Member Profile 2022
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                Our Blog
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative parent">
+          <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:text-orange-400 space-x-2">
+            <span>Activities</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+            </svg>
+          </a>
+          <ul
+            class="child transition duration-300 text-black md:absolute top-full right-0 md:w-48 bg-gray-50 devide-y devide-slate-300 shadow-lg divide-y divide-slate-200 md:rounded-b ">
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                CSR
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                Events
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
+                Seminar
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="flex md:inline-flex p-4 items-center hover:text-orange-400">
+            <span>Become a member</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Mobile nav -->
+  <div class="lg:hidden block relative">
+    <div class="w-full bg-green-900 shadow-lg">
+      <div class="flex justify-between px-4 py-4 items-center w-10/12 mx-auto text-white">
+        <div class="text-lg font-bold md:py-0 py-4">
+          Logo
+        </div>
+        <div class="hover:cursor-pointer">
+          <i class="fa-solid fa-bars text-white text-3xl block duration-700" id="humberger"></i>
+          <i class="fa-solid fa-xmark text-white text-3xl hidden duration-700" id="xmark"></i>
+        </div>
+      </div>
+    </div>
+    <div class="w-11/12 mx-auto relative" >
+      <nav class="bg-gray-50 shadow-md fixed z-20 w-11/12 mx-auto flex items-center justify-center toggle-inactive" id="toggle-nav">
+        <ul class="divide-y divide-slate-200 w-full text-center">
+          <li class="hover:text-orange-400 hover:bg-white hover:cursor-pointer py-3">
+            <a href="#" class="">
+              <span>Business Directory</span>
+            </a>
+          </li>
+          <li class="hover:text-orange-400 hover:bg-white hover:cursor-pointer py-3">
+            <a href="#" class="">
+              <span>eMarketplace</span>
+            </a>
+          </li>
+          <li class="inactive">
+            <div class="w-full hover:bg-gray-50 divide-y divide-slate-200 hover:cursor-pointer py-3 flex justify-center items-center" id="sub-menu">
+              <a href="#" class="w-full hover:text-orange-400">
+                <span>About CPSF</span>
+              </a>
+              <i class="fa-solid fa-angle-down text-lg mr-3"></i>
+            </div>
+            <ul
+              class="w-full text-center" id="sub-nav">
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  Profile
+                </a>
+              </li>
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  Team Managements
+                </a>
+              </li>
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  History
+                </a>
+              </li>
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  Strategic
+                </a>
+              </li>
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  Our Donors Partners
+                </a>
+              </li>
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  Message
+                </a>
+              </li>
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  Privacy and Policy
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="inactive">
+            <div class="w-full hover:bg-gray-50 divide-y divide-slate-200 hover:cursor-pointer py-3 flex justify-center items-center" id="sub-menu">
+              <a href="#" class="w-full hover:text-orange-400">
+                <span>Resources</span>
+              </a>
+              <i class="fa-solid fa-angle-down text-lg mr-3"></i>
+            </div>
+            <ul
+              class="w-full text-center" id="sub-nav">
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  Data Collection 2022
+                </a>
+              </li>
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  Daily Price Update
+                </a>
+              </li>
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  Member Profile 2022
+                </a>
+              </li>
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  Our Blog
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="inactive">
+            <div class="w-full hover:bg-gray-50 divide-y divide-slate-200 hover:cursor-pointer py-3 flex justify-center items-center" id="sub-menu">
+              <a href="#" class="w-full hover:text-orange-400">
+                <span>Activities</span>
+              </a>
+              <i class="fa-solid fa-angle-down text-lg mr-3"></i>
+            </div>
+            <ul
+              class="w-full text-center" id="sub-nav">
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  CSR
+                </a>
+              </li>
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  Careers
+                </a>
+              </li>
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  Events
+                </a>
+              </li>
+              <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
+                <a href="#" class="">
+                  Seminar
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class=" hover:text-orange-400 hover:bg-white hover:cursor-pointer py-3">
+            <a href="#" class="">
+              <span>Become a member</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  </nav>
+  <script src="../app/index.js"></script>
+</body>
+
+</html>
