@@ -19,7 +19,7 @@
   }
   
   body {
-    background: #fff;
+    background: #f1f1f1;
   }
   
   .toggle-inactive {
@@ -36,7 +36,7 @@
   .toggle-active {
     transition: 1s;
     max-height: 100vh;
-    overflow: hidden;
+    overflow-y: hidden;
     position: fixed;
     z-index: 30;
     width: 91.666667%;
@@ -64,9 +64,8 @@
     max-height: 100vh;
     font-family: Poppins,sans-serif;
     font-size: 13px;
-    overflow: hidden;
+    overflow-y: hidden;
     font-weight: 500;
-    
   }
   .footer {
     background: #385d2e;
