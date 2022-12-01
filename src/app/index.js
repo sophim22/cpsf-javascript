@@ -55,3 +55,26 @@ for (let i = 0; i < subMenu.length; i++) {
     subnav.changeClassName(preParentElement, 'inactive', 'active');
   })
 }
+
+let swiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 7500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1020: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+  },
+});

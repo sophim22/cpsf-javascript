@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navigation</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!-- link style swiper here -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link href="/dist/main.css" rel="stylesheet">
 </head>
 
@@ -17,8 +19,7 @@
       <div class="text-lg font-bold md:py-0 py-4 px-5 text-white">
         Logo
       </div>
-      <ul class="px-2 ml-auto flex space-x-2 text-white"
-        id="">
+      <ul class="px-2 ml-auto flex space-x-2 text-white" id="">
         <li>
           <a href="#" class="flex md:inline-flex p-4 items-center hover:text-orange-400">
             <span>Business Directory</span>
@@ -320,9 +321,76 @@
         Now</a>
     </div>
     <div class="bg-black/60 absolute z-10 w-auto min-w-full min-h-full max-w-none top-0">
-
+  </div>
+  <!-- swiper section start -->
+  <section class="swiper mySwiper m-auto w-full md:w-[90%]">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide text-center bg-[#e5e5e5] rounded-xl p-2">
+        <image src="../images/emarket.png" alt="" class="rounded-xl m-auto" />
+        <div class="mt-2">
+          <p class="text-[#759b43]">eMarketplace</p>
+          <p class="text-[#f37f20] text-sm">Push Deal, RFQ Biding</p>
+        </div>
+      </div>
+      <div class="swiper-slide text-center bg-[#e5e5e5] rounded-xl p-2">
+        <image src="../images/elearning.png" alt="" class="rounded-xl m-auto" />
+        <div class="mt-2">
+          <p class="text-[#759b43]">eLearning</p>
+          <p class="text-[#f37f20] text-sm">Video Document</p>
+        </div>
+      </div>
+      <div class="swiper-slide text-center bg-[#e5e5e5] rounded-xl p-2">
+        <image src="../images/business.png" alt="" class="rounded-xl m-auto" />
+        <div class="mt-2">
+          <p class="text-[#759b43]">Business Directory</p>
+          <p class="text-[#f37f20] text-sm">Search View Profile</p>
+        </div>
+      </div>
+      <div class="swiper-slide text-center bg-[#e5e5e5] rounded-xl p-2">
+        <image src="../images/meeting-event.png" alt="" class="rounded-xl m-auto" />
+        <div class="mt-2">
+          <p class="text-[#759b43]">Meeting / Event</p>
+          <p class="text-[#f37f20] text-sm">Uncomming Event</p>
+        </div>
+      </div>
+      <div class="swiper-slide text-center bg-[#e5e5e5] rounded-xl p-2">
+        <image src="../images/membership.png" alt="" class="rounded-xl m-auto bg-green-500" />
+        <div class="mt-2">
+          <p class="text-[#759b43]">Join Membership</p>
+          <p class="text-[#f37f20] text-sm">Become a Member</p>
+        </div>
+      </div>
     </div>
+  </section>
+  <section class="mt-20 w-[90%] m-auto">
+    <div>
+      <p class="uppercase text-[#385d2e] text-[22px] font-bold text-center">welcome!</p>
+      <p class="mt-2 text-[#393939] text-[18px] w-[86%] text-center m-auto">Cambodia Pepper and Spice Federation is
+        established in aim to see Cambodia is known
+        by Global market as a main pepper supply country with good quality, sustainability
+        of production; and by this well-known, will bring the pepper to become a main sector
+        that contribute to economic development of nation, producers and marketing operators.
+      </p>
+    </div>
+    <div class="mt-5 w-[90%] m-auto">
+      <div class="flex flex-wrap justify-center gap-3">
+        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/hekseper.png"/>
+        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/helvestas.png" />
+      </div>
+      <div class="flex mt-3 sm:mt-5 flex-wrap justify-center gap-3 w-full">
+        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/maff.png" />
+        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/moc.png"/>
+        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/cird.png"/>
+        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/cpsf_ifc.png" />
+        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/cpsf_profound.png"/>
+        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/cpsf_cpsa.png"/>
+        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/khmerorganic.png"/>
+      </div>
+    </div>
+  </section>
+  <!-- swiper section end -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../app/index.js"></script>
 </body>
-<script src="../app/index.js"></script>
 
 </html>
