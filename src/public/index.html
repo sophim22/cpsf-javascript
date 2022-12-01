@@ -15,11 +15,12 @@
 <body>
   <!-- Monitor nav -->
   <div id="main-nav" class="lg:block hidden relative">
-    <nav class="flex items-center absolute z-30 w-full px-20 h-24 mx-auto lg:bg-gradient-to-b lg:from-lime-700/100">
+    <nav class="flex items-center absolute z-30 w-full h-24 mx-auto lg:bg-gradient-to-b lg:from-lime-700/100">
       <div class="text-lg font-bold md:py-0 py-4 px-5 text-white">
-        Logo
+        <Image src='../images/logo.png' width="75" height="37" />
       </div>
-      <ul class="px-2 ml-auto flex space-x-2 text-white" id="">
+      <ul class="px-2 ml-auto flex space-x-2 text-white"
+        id="">
         <li>
           <a href="#" class="flex md:inline-flex p-4 items-center hover:text-orange-400">
             <span>Business Directory</span>
@@ -38,7 +39,7 @@
             </svg>
           </a>
           <ul
-            class="child transition duration-300 md:absolute text-black top-full right-0 md:w-48 bg-gray-50 shadow-lg divide-y divide-slate-200 md:rounded-b">
+            class="child transition duration-300 md:absolute text-black top-full -right-18 md:w-52 bg-gray-50 shadow-lg divide-y divide-slate-200 md:rounded-b">
             <li>
               <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
                 Profile
@@ -84,7 +85,7 @@
             </svg>
           </a>
           <ul
-            class="child transition duration-300 md:absolute text-black top-full right-0 md:w-48 bg-gray-50 devide-y devide-slate-300 shadow-lg divide-y divide-slate-200 md:rounded-b ">
+            class="child transition duration-300 md:absolute text-black top-full -right-18 md:w-52 bg-gray-50 devide-y devide-slate-300 shadow-lg divide-y divide-slate-200 md:rounded-b ">
             <li>
               <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
                 Data Collection 2022
@@ -115,7 +116,7 @@
             </svg>
           </a>
           <ul
-            class="child transition duration-300 text-black md:absolute top-full right-0 md:w-48 bg-gray-50 devide-y devide-slate-300 shadow-lg divide-y divide-slate-200 md:rounded-b ">
+            class="child transition duration-300 text-black md:absolute top-full -right-18 md:w-52 bg-gray-50 devide-y devide-slate-300 shadow-lg divide-y divide-slate-200 md:rounded-b ">
             <li>
               <a href="#" class="flex px-4 py-3 hover:text-orange-400 hover:bg-white hover:px-5">
                 CSR
@@ -293,104 +294,125 @@
       </nav>
     </div>
   </div>
-  <div class="relative">
+  <!-- video -->
+  <div class="relative lg:block hidden">
     <div class="relative h-screen mb-12 overflow-hidden">
       <video id="video"
         class="absolute z-10 w-auto min-w-full min-h-full max-w-none flex justify-center overflow-hidden" autoPlay
-        width="100%"
-        muted loop
-        src="https://cpsfportal.s3.amazonaws.com/assets/pepperfarm-7d42603c6c71c7b682395a8d23941f656aa422e72542aa8b31c45f703d02ff39.mp4" >
-      </div>
+        width="100%" muted loop
+        src="https://cpsfportal.s3.amazonaws.com/assets/pepperfarm-7d42603c6c71c7b682395a8d23941f656aa422e72542aa8b31c45f703d02ff39.mp4">
     </div>
-    <div class="absolute top-32 left-32 z-30 text-white md:mt-60 mt-40 md:ml-24 ml-5 sm:text-start text-center">
-      <h6 class="md:text-xl text-sm">
-        CAMBODIA PEPPER AND SPICES FEDERATION (CPSF)
-      </h6>
-      <br />
-      <h2 class="md:text-4xl text-xl font-extrabold">
-        CAMBODIA’S NUMBER 1 PLATFORM
-      </h2>
-      <br />
-      <h3 class="md:text-3xl text-xl">
-        where producers and buyers of pepper and spices <br /> can swiftly and
-        easily on the local and global markets.
-      </h3>
-      <br />
-      <a href="#contact"
-        class="text-[#fff] bg-orange uppercase py-3 px-5 rounded-full bg-orange-500 hover:bg-orange/80 duration-500 text-sm">Join
-        Now</a>
+  </div>
+  <div class="lg:block hidden absolute top-32 left-32 z-30 text-white md:mt-60 mt-40 md:ml-24 ml-5 sm:text-start text-center">
+    <h6 class="md:text-xl text-sm">
+      CAMBODIA PEPPER AND SPICES FEDERATION (CPSF)
+    </h6>
+    <br />
+    <h2 class="md:text-4xl text-xl font-extrabold">
+      CAMBODIA’S NUMBER 1 PLATFORM
+    </h2>
+    <br />
+    <h3 class="md:text-3xl text-xl">
+      where producers and buyers of pepper and spices <br /> can swiftly and
+      easily on the local and global markets.
+    </h3>
+    <br />
+    <a href="#contact"
+      class="text-[#fff] bg-orange uppercase py-3 px-5 rounded-full bg-orange-500 hover:bg-orange/80 duration-500 text-sm">Join
+      Now</a>
+  </div>
+  <div class="lg:block hidden bg-black/60 absolute z-10 w-auto min-w-full min-h-full max-w-none top-0">
+  </div>
+
+  
+
+  <!-- footer -->
+
+  <div class="">
+    <div class="footer w-full h-full font-poppins">
+      <div class="sm:flex lg:w-11/12 mx-auto items-start text-start p-10 w-full flex-wrap">
+        <div class="lg:w-3/12 text-white w-full p-2">
+          <Image src='../images/logo.png' width="75" height="37" />
+          <p class="mt-2">
+            Address: No 206, Street 63, Sangkat Beong Keng kang I, Khan
+            Chamkarmon, Phnom Penh, Cambodia Email: info@cpsfportnet.org
+            Hotline: 023 23 45 98
+          </p>
+        </div>
+        <div class="lg:w-3/12 lg:flex lg:justify-center w-1/3 p-2">
+          <ul class="text-white space-y-2">
+            <p class="font-black">Our Platform</p>
+            <li>
+              <a href="#">eBusiness</a>
+            </li>
+            <li>
+              <a href="#">eMarketPlace</a>
+            </li>
+            <li>
+              <a href="#">eLearning</a>
+            </li>
+            <li>
+              <a href="#">eComerce</a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:w-3/12 text-white lg:flex lg:justify-center w-1/3 p-2">
+          <ul class="space-y-2">
+            <p class="font-black">About CPSF</p>
+            <li>
+              <a href="#">Profile</a>
+            </li>
+            <li>
+              <a href="#">Team Managements</a>
+            </li>
+            <li>
+              <a href="#">History</a>
+            </li>
+            <li>
+              <a href="#">Strategic</a>
+            </li>
+            <li>
+              <a href="#">Our Donors & Partners</a>
+            </li>
+            <li>
+              <a href="#">Message</a>
+            </li>
+            <li>
+              <a href="#">Privacy and Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:w-3/12 text-white lg:flex lg:justify-center w-1/3 p-2">
+          <ul class="space-y-2">
+            <p class="font-black">Resources</p>
+            <li>
+              <a href="#">Pepper Data Collections</a>
+            </li>
+            <li>
+              <a href="#">Daily Price Update</a>
+            </li>
+            <li>
+              <a href="#">Member Profile 2022</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">FAQs</a>
+            </li>
+            <li>
+              <a href="#">Help</a>
+            </li>
+            <li>
+              <a href="#">Site Map</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="bg-black/60 absolute z-10 w-auto min-w-full min-h-full max-w-none top-0">
-  </div>
-  <!-- swiper section start -->
-  <section class="swiper mySwiper m-auto w-full md:w-[90%]">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide text-center bg-[#e5e5e5] rounded-xl p-2">
-        <image src="../images/emarket.png" alt="" class="rounded-xl m-auto" />
-        <div class="mt-2">
-          <p class="text-[#759b43]">eMarketplace</p>
-          <p class="text-[#f37f20] text-sm">Push Deal, RFQ Biding</p>
-        </div>
-      </div>
-      <div class="swiper-slide text-center bg-[#e5e5e5] rounded-xl p-2">
-        <image src="../images/elearning.png" alt="" class="rounded-xl m-auto" />
-        <div class="mt-2">
-          <p class="text-[#759b43]">eLearning</p>
-          <p class="text-[#f37f20] text-sm">Video Document</p>
-        </div>
-      </div>
-      <div class="swiper-slide text-center bg-[#e5e5e5] rounded-xl p-2">
-        <image src="../images/business.png" alt="" class="rounded-xl m-auto" />
-        <div class="mt-2">
-          <p class="text-[#759b43]">Business Directory</p>
-          <p class="text-[#f37f20] text-sm">Search View Profile</p>
-        </div>
-      </div>
-      <div class="swiper-slide text-center bg-[#e5e5e5] rounded-xl p-2">
-        <image src="../images/meeting-event.png" alt="" class="rounded-xl m-auto" />
-        <div class="mt-2">
-          <p class="text-[#759b43]">Meeting / Event</p>
-          <p class="text-[#f37f20] text-sm">Uncomming Event</p>
-        </div>
-      </div>
-      <div class="swiper-slide text-center bg-[#e5e5e5] rounded-xl p-2">
-        <image src="../images/membership.png" alt="" class="rounded-xl m-auto bg-green-500" />
-        <div class="mt-2">
-          <p class="text-[#759b43]">Join Membership</p>
-          <p class="text-[#f37f20] text-sm">Become a Member</p>
-        </div>
-      </div>
+
     </div>
-  </section>
-  <section class="mt-20 w-[90%] m-auto">
-    <div>
-      <p class="uppercase text-[#385d2e] text-[22px] font-bold text-center">welcome!</p>
-      <p class="mt-2 text-[#393939] text-[18px] w-[86%] text-center m-auto">Cambodia Pepper and Spice Federation is
-        established in aim to see Cambodia is known
-        by Global market as a main pepper supply country with good quality, sustainability
-        of production; and by this well-known, will bring the pepper to become a main sector
-        that contribute to economic development of nation, producers and marketing operators.
-      </p>
-    </div>
-    <div class="mt-5 w-[90%] m-auto">
-      <div class="flex flex-wrap justify-center gap-3">
-        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/hekseper.png"/>
-        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/helvestas.png" />
-      </div>
-      <div class="flex mt-3 sm:mt-5 flex-wrap justify-center gap-3 w-full">
-        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/maff.png" />
-        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/moc.png"/>
-        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/cird.png"/>
-        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/cpsf_ifc.png" />
-        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/cpsf_profound.png"/>
-        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/cpsf_cpsa.png"/>
-        <Image class="md:w-[14%] w-[30%] bg-white rounded-2xl" alt="" src="../images/khmerorganic.png"/>
-      </div>
-    </div>
-  </section>
-  <!-- swiper section end -->
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="../app/index.js"></script>
 </body>
 
 </html>
