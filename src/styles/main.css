@@ -3,70 +3,96 @@
 @tailwind utilities;
 
 @media only screen and (min-width: 768px) {
-    .parent:hover .child {
-      opacity: 1;
-      height: auto;
-      overflow: none;
-      transform: translateY(0);
-    }
-  
-    .child {
-      opacity: 0;
-      height: 0;
-      overflow: hidden;
-      transform: translateY(10%);
-    }
+  .parent:hover .child {
+    opacity: 1;
+    height: auto;
+    overflow: none;
+    transform: translateY(0);
   }
-  
-  body {
-    background: #f1f1f1;
-  }
-  
-  .toggle-inactive {
-    transition: 0.3s;
+
+  .child {
+    opacity: 0;
+    height: 0;
     overflow: hidden;
-    max-height: 0;
-    width: 91.666667%;
-    position: fixed;
-    z-index: 30;
-    background: #F8F9F9;
-    margin-left: auto;
-    margin-right: auto;
+    transform: translateY(10%);
   }
-  .toggle-active {
-    transition: 1s;
-    max-height: 100vh;
-    overflow-y: hidden;
-    position: fixed;
-    z-index: 30;
-    width: 91.666667%;
-    margin: auto;
-    background: #F8F9F9;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .inactive:hover , .active:hover {
-    cursor: pointer;
-  }
-  
-  .inactive > ul {
-    transition: 0.4s;
-    max-height: 0;
-    font-size: 13px;
-    font-family: Poppins,sans-serif;
-    overflow: hidden;
-    font-weight: 500;
-  }
-  
-  .active > ul {
-    transition: 1s;
-    max-height: 100vh;
-    font-family: Poppins,sans-serif;
-    font-size: 13px;
-    overflow-y: hidden;
-    font-weight: 500;
-  }
-  .footer {
-    background: #385d2e;
-  }
+}
+
+body {
+  background: #f1f1f1;
+}
+
+.toggle-inactive {
+  transition: 0.3s;
+  overflow: hidden;
+  max-height: 0;
+  width: 91.666667%;
+  position: fixed;
+  z-index: 30;
+  background: #F8F9F9;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toggle-active {
+  transition: 1s;
+  max-height: 100vh;
+  overflow-y: hidden;
+  position: fixed;
+  z-index: 30;
+  width: 91.666667%;
+  margin: auto;
+  background: #F8F9F9;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inactive:hover,
+.active:hover {
+  cursor: pointer;
+}
+
+.inactive>ul {
+  transition: 0.4s;
+  max-height: 0;
+  font-size: 13px;
+  font-family: Poppins, sans-serif;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+.active>ul {
+  transition: 1s;
+  max-height: 100vh;
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  overflow-y: hidden;
+  font-weight: 500;
+}
+
+.footer {
+  background: #385d2e;
+}
+
+.farmer-story {
+  background: #759b43;
+}
+
+.mobile-nav {
+  background: #385d2e;
+}
+.nav {
+  background: linear-gradient(180deg, #385d2e, transparent 90%);
+}
+.top-nav {
+  background: #759b43;
+  position: relative;
+  z-index: 111;
+}
+
+.main-banner {
+  position: relative;
+  max-height: 100%;
+  overflow: hidden;
+  margin-bottom: -7px;
+}
