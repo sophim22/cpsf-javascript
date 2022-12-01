@@ -7,18 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navigation</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="/dist/main.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- Monitor nav -->
-  <div id="main-nav" class="lg:block hidden">
-    <nav class="flex px-4 items-center fixed z-30 w-full mx-auto bg-green-900 shadow-lg">
-      <div class="text-lg font-bold md:py-0 py-4">
+  <div id="main-nav" class="lg:block hidden relative">
+    <nav class="flex items-center absolute z-30 w-full h-24 mx-auto lg:bg-gradient-to-b lg:from-lime-700/100">
+      <div class="text-lg font-bold md:py-0 py-4 px-5 text-white">
         Logo
       </div>
-      <ul class="md:px-2 ml-auto md:flex md:space-x-2 text-white absolute md:relative top-full left-0 right-0"
-        id="main-nav">
+      <ul class="px-2 ml-auto flex space-x-2 text-white"
+        id="">
         <li>
           <a href="#" class="flex md:inline-flex p-4 items-center hover:text-orange-400">
             <span>Business Directory</span>
@@ -158,8 +158,9 @@
         </div>
       </div>
     </div>
-    <div class="w-11/12 mx-auto relative" >
-      <nav class="bg-gray-50 shadow-md fixed z-20 w-11/12 mx-auto flex items-center justify-center toggle-inactive" id="toggle-nav">
+    <div class="w-11/12 mx-auto relative">
+      <nav class="bg-gray-50 shadow-md fixed z-20 w-11/12 mx-auto flex items-center justify-center toggle-inactive"
+        id="toggle-nav">
         <ul class="divide-y divide-slate-200 w-full text-center">
           <li class="hover:text-orange-400 hover:bg-white hover:cursor-pointer py-3">
             <a href="#" class="">
@@ -172,14 +173,15 @@
             </a>
           </li>
           <li class="inactive">
-            <div class="w-full hover:bg-gray-50 divide-y divide-slate-200 hover:cursor-pointer py-3 flex justify-center items-center" id="sub-menu">
+            <div
+              class="w-full hover:bg-gray-50 divide-y divide-slate-200 hover:cursor-pointer py-3 flex justify-center items-center"
+              id="sub-menu">
               <a href="#" class="w-full hover:text-orange-400">
                 <span>About CPSF</span>
               </a>
               <i class="fa-solid fa-angle-down text-lg mr-3"></i>
             </div>
-            <ul
-              class="w-full text-center" id="sub-nav">
+            <ul class="w-full text-center" id="sub-nav">
               <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
                 <a href="#" class="">
                   Profile
@@ -218,14 +220,15 @@
             </ul>
           </li>
           <li class="inactive">
-            <div class="w-full hover:bg-gray-50 divide-y divide-slate-200 hover:cursor-pointer py-3 flex justify-center items-center" id="sub-menu">
+            <div
+              class="w-full hover:bg-gray-50 divide-y divide-slate-200 hover:cursor-pointer py-3 flex justify-center items-center"
+              id="sub-menu">
               <a href="#" class="w-full hover:text-orange-400">
                 <span>Resources</span>
               </a>
               <i class="fa-solid fa-angle-down text-lg mr-3"></i>
             </div>
-            <ul
-              class="w-full text-center" id="sub-nav">
+            <ul class="w-full text-center" id="sub-nav">
               <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
                 <a href="#" class="">
                   Data Collection 2022
@@ -249,14 +252,15 @@
             </ul>
           </li>
           <li class="inactive">
-            <div class="w-full hover:bg-gray-50 divide-y divide-slate-200 hover:cursor-pointer py-3 flex justify-center items-center" id="sub-menu">
+            <div
+              class="w-full hover:bg-gray-50 divide-y divide-slate-200 hover:cursor-pointer py-3 flex justify-center items-center"
+              id="sub-menu">
               <a href="#" class="w-full hover:text-orange-400">
                 <span>Activities</span>
               </a>
               <i class="fa-solid fa-angle-down text-lg mr-3"></i>
             </div>
-            <ul
-              class="w-full text-center" id="sub-nav">
+            <ul class="w-full text-center" id="sub-nav">
               <li class="hover:text-orange-400 hover:bg-white border-t border-slate-200 py-3 hover:cursor-pointer">
                 <a href="#" class="">
                   CSR
@@ -288,9 +292,35 @@
       </nav>
     </div>
   </div>
-
-  </nav>
-  <script src="../app/index.js"></script>
+  <div class="relative">
+    <div class="relative h-screen mb-12 overflow-hidden">
+      <video id="video"
+        class="absolute z-10 w-auto min-w-full min-h-full max-w-none flex justify-center overflow-hidden" autoPlay
+        width="100%"
+        muted loop
+        src="https://cpsfportal.s3.amazonaws.com/assets/pepperfarm-7d42603c6c71c7b682395a8d23941f656aa422e72542aa8b31c45f703d02ff39.mp4" >
+      <div class="absolute z-20 text-white md:mt-60 mt-40 md:ml-24 ml-5 sm:text-start text-center">
+        <h6 class="md:text-xl text-sm">
+          CAMBODIA PEPPER AND SPICES FEDERATION (CPSF)
+        </h6>
+        <br />
+        <h2 class="md:text-4xl text-xl font-extrabold">
+          CAMBODIA’S NUMBER 1 PLATFORM
+        </h2>
+        <br />
+        <h3 class="md:text-3xl text-xl">
+          where producers and buyers of pepper and spices <br /> can swiftly and
+          easily on the local and global markets.
+        </h3>
+        <br />
+        <a href="#contact"
+          class="text-[#fff] bg-orange uppercase py-3 px-5 rounded-full hover:bg-orange/80 duration-500 text-sm">Join
+          Now</a>
+      </div>
+      <div class="bg-black/50 absolute z-50 w-auto min-w-full min-h-full max-w-none top-0">sdfsadfsadf</div>
+    </div>
+  </div>
 </body>
+<script src="../app/index.js"></script>
 
 </html>
